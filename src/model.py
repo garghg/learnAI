@@ -1,5 +1,6 @@
 from huggingface_hub import InferenceClient
 import ast
+import os
 
 links = [
     "https://realpython.com/tutorials/beginner/",  # Real Python Beginner Tutorials
@@ -27,7 +28,7 @@ links = [
 
 client = InferenceClient(
     provider="auto",
-    api_key="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",
+    hugging_face_api_key = os.getenv("HUGGING_FACE_API_KEY")
 )
 
 
