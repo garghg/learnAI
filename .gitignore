@@ -1,8 +1,12 @@
 # Ignore everything
 *
 
+
 # But don't ignore these directories/files
 !src/
 !src/**
 !.gitignore
 !README.md
+
+# ignore pycache
+src/__pycache__/
