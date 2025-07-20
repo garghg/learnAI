@@ -1,2 +1,4 @@
-def scrape():
-    print('scraping...')
+import scrapy
+
+def scrape(searches):
+    print('scraping...') 

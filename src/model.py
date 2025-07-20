@@ -27,8 +27,8 @@ links = [
 
 
 client = InferenceClient(
-    provider="auto",
-    hugging_face_api_key = os.getenv("HUGGING_FACE_API_KEY")
+    provider="novita",
+    api_key=os.environ["HUGGING_FACE_API_KEY"]
 )
 
 

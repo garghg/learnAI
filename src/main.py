@@ -1,10 +1,9 @@
 #To-do list:
 #   Hour 0-3 - scraping and collect data
-#   COMMIT
+#       - https://docs.scrapy.org/en/latest/intro/tutorial.html
+#   COMMIT HERE
+
 #   Hour 3-5 - gsap
-
-# I want to scrape links from google 
-
 
 # import libraries
 from flask import Flask, render_template, request, redirect, session, url_for
