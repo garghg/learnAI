@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/index.css">
     <title>learnAI</title>
 </head>
 <body>
-    <h1>learnAI</h1>
-    <form action="#" method="POST">
-        <input type="text" placeholder="Enter a skill name Eg: python" name="skill">
-        <input type="submit" value="Enter">
+    <h1 class="quantico-bold" id="heading">learnAI</h1>
+    <form action="#" method="POST" id="form">
+        <input type="text" placeholder="Enter a skill name... Eg: python, cooking, etc." name="skill" id="skill" class="quantico-regular" autocomplete="off">
+        <input type="submit" value="Generate Path" id="submit" class="quantico-regular">
     </form>
 </body>
+    <script src="../static/js/index.js"></script>
 </html>

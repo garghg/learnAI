@@ -57,4 +57,5 @@ def question_list(skill):
             }
         ],
     )
+    print(questions.choices[0].message.content)
     return ast.literal_eval(questions.choices[0].message.content)
