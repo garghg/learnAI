@@ -52,10 +52,15 @@ def question_list(skill):
         messages=[
             {
                 "role": "user",
-                "content": f"""I wish to scrape links from the web to learn {skill}. Give me an iterable python list of queries I can search from beginner to advanced to get useful links.
-                NO additonal text."""
+                "content": f"""I wish to scrape links from the web to learn {skill}.
+                Give me a python list of queries I can search from beginner to advanced to get useful links.
+                Make sure the python list is properly formatted with valid syntax containting only strings (no numbers or special characters).
+                NO additonal text. Just output a python list as specified"""
             }
         ],
     )
-    print(questions.choices[0].message.content)
-    return ast.literal_eval(questions.choices[0].message.content)
+
+    try:
+        return ast.literal_eval(questions.choices[0].message.content)
+    except:
+        print('Something went wrong... try again!')

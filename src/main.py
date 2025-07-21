@@ -1,10 +1,11 @@
 #To-do list:
-#   Hour 0-5 - scraping and collect data and stytling
+#   scraping and collect data 
+#   stytling
 #       - https://docs.scrapy.org/en/latest/intro/tutorial.html
-#   Tomorrow:
-    #   - scraping and collect data and stytling
-    #   - full stack app structure and npm installation
-    #   - cursor: https://dev.to/uuuuuulala/coding-an-interactive-and-damn-satisfying-cursor-7-simple-steps-2kb-of-code-1c8b
+#   add a loading screen 
+#   full stack app structure and npm installation
+#   cursor: https://dev.to/uuuuuulala/coding-an-interactive-and-damn-satisfying-cursor-7-simple-steps-2kb-of-code-1c8b
+#   add comments
 
 
 # import libraries
