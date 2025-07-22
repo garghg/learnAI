@@ -2,27 +2,37 @@ from huggingface_hub import InferenceClient
 import ast
 import os
 
-links = [
-    "https://realpython.com/tutorials/beginner/",  # Real Python Beginner Tutorials
-    "https://www.w3schools.com/python/",  # W3Schools Python Tutorial
-    "https://docs.python.org/3/tutorial/",  # Official Python Docs (Beginner-Friendly)
-    "https://www.freecodecamp.org/news/learn-python-by-building-projects/",  # FreeCodeCamp: Learn Python by Building Projects
-    "https://www.learnpython.org/",  # Learn Python (Interactive)
-    "https://www.codecademy.com/learn/learn-python-3",  # Codecademy Python 3 Course
-    "https://www.python-course.eu/python3_course.php",  # Python Course (Intermediate to Advanced)
-    "https://www.kaggle.com/learn/python",  # Kaggle Python for Data Science (Advanced Projects)
-    "https://www.geeksforgeeks.org/python-programming-language/",  # GeeksforGeeks Python Tutorials
-    "https://www.edx.org/course/introduction-to-python-programming-2",  # edX Python Introduction (Free Course)
-    "https://www.udemy.com/course/complete-python-bootcamp/",  # Udemy: Complete Python Bootcamp (Comprehensive)
-    "https://www.pybites.io/",  # PyBites (Advanced Python Challenges)
-    "https://www.youtube.com/watch?v=rfscVS0vtbw",  # FreeCodeCamp: Python Tutorial for Beginners (YouTube)
-    "https://automatetheboringstuff.com/",  # Automate the Boring Stuff with Python (Beginner to Intermediate)
-    "https://realpython.com/python-oop/",  # Real Python Object-Oriented Programming (Advanced)
-    "https://www.tutorialspoint.com/python/index.htm",  # TutorialsPoint Python Tutorials
-    "https://www.fullstackpython.com/lessons.html",  # Full Stack Python (Advanced Topics)
-    "https://www.programiz.com/python-programming",  # Programiz Python Programming
-    "https://www.coursera.org/specializations/python",  # Coursera Python for Everybody Specialization (Beginner to Intermediate)
-    "https://www.pythontutorial.net/",  # Python Tutorial (Clear Beginner Guide)
+python_list = [
+    "learn python for beginners",
+    "python basic syntax tutorial",
+    "python variables and data types",
+    "python control structures tutorial",
+    "learn python functions and methods",
+    "python list comprehension guide",
+    "learn object-oriented programming in python",
+    "python modules and libraries tutorial",
+    "understanding python decorators",
+    "python error handling and exceptions",
+    "advanced python data structures",
+    "python regular expressions tutorial",
+    "learn python file handling",
+    "python web scraping tutorial",
+    "python working with APIs",
+    "python database interaction tutorial",
+    "learn python threading and multiprocessing",
+    "python advanced algorithms and problem solving",
+    "deep dive into python memory management",
+    "master python with data science",
+    "python machine learning basics",
+    "learn python for data analysis",
+    "python advanced techniques for performance optimization",
+    "python functional programming concepts",
+    "understanding python's async and await",
+    "learn testing in python with pytest",
+    "python design patterns",
+    "learn python GUI programming",
+    "python networking and socket programming",
+    "advanced python techniques and tips"
 ]
 
 
@@ -30,21 +40,6 @@ client = InferenceClient(
     provider="novita",
     api_key=os.environ["HUGGING_FACE_API_KEY"]
 )
-
-
-ranking = client.chat.completions.create(
-    model="meta-llama/Llama-3.1-8B-Instruct",
-    messages=[
-        {
-            "role": "user",
-            "content": f"""I will provide a list of links that teach Python.
-            Please rank these links from beginner to advanced based on their content. Do not generate new links, just rank the ones I provide.
-            Here's the links: {links}
-            Now tell me the reasoning behind your ranking choices."""
-        }
-    ],
-)
-
 
 def question_list(skill):
     questions = client.chat.completions.create(
@@ -63,4 +58,4 @@ def question_list(skill):
     try:
         return ast.literal_eval(questions.choices[0].message.content)
     except:
-        print('Something went wrong... try again!')
+        return python_list
