@@ -8,5 +8,5 @@ This is a learning path generater that asks user to input what they would like t
 1. Run `pip install -r requirements.txt` to install all dependencies
 2. Run `python main.py`
 
-_Note: In model.py, replace HUGGING_FACE_API_KEY with your own key. For test purposes, it will generate a python learning path if you use it without a key._
+_Note: In model.py, replace HUGGING_FACE_API_KEY with your own key. For test purposes, it will generate a python learning path if you use it without a key._  
 _Note: It may take a few minutes to generate a path. There may be occasional inaccuracies by the models used._
