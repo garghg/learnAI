@@ -5,12 +5,20 @@ This is a learning path generater that asks user to input what they would like t
 ---
 ## Set Up
 
-3.  **Clone repo**: `git clone https://github.com/garghg/learnAI.git`
+1.  **Clone repo**: `git clone https://github.com/garghg/learnAI.git`
 2. **Create venv**: `python -m venv venv`
 3. **Activate venv**: `venv\Scripts\activate`
 4. **Install dependencies**: `pip install -r requirements.txt`
-5. **Run project**: `python main.py`
-6. **Deactivate venv**: `deactivate`
+6. **Run project**: `python main.py`
+7. **Deactivate venv**: `deactivate`
+
+   ### If you have issue with requirements.txt, please run the following:
+   1. `pip install flask`
+   2. `pip install huggingface_hub`
+   3. `pip install beautifulsoup4`
+   4. `pip install stem`
+   5. `pip install selenium`
+   6. `pip install selenium_stealth`
 
 _Note: In model.py, replace HUGGING_FACE_API_KEY with your own key. For test purposes, it will generate a python learning path if you use it without a key._  
 _Note: It may take a few minutes to generate a path. There may be occasional inaccuracies by the models used._
