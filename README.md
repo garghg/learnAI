@@ -8,7 +8,7 @@ This is a learning path generater that asks user to input what they would like t
 1.  **Clone repo**: `git clone https://github.com/garghg/learnAI.git`
 2. **Create venv**: `python -m venv venv`
 3. **Activate venv**: `venv\Scripts\activate`
-4. **Install dependencies**: `pip install -r requirements.txt`
+4. **Install dependencies**: `pip install -r requirements.txt`  
     If you have issue with requirements.txt, please run the following:
    1. `pip install flask`
    2. `pip install huggingface_hub`
