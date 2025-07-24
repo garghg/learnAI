@@ -6,9 +6,10 @@ This is a learning path generater that asks user to input what they would like t
 ## Set Up
 
 1.  **Clone repo**: `git clone https://github.com/garghg/learnAI.git`
-2. **Create venv**: `python -m venv venv`
-3. **Activate venv**: `venv\Scripts\activate`
-4. **Install dependencies**: `pip install -r requirements.txt`  
+2.  Enter the src directory 
+3. **Create venv**: `python -m venv venv`
+4. **Activate venv**: `venv\Scripts\activate`
+5. **Install dependencies**: `pip install -r requirements.txt`  
     If you have issue with requirements.txt, please run the following:
    1. `pip install flask`
    2. `pip install huggingface_hub`
@@ -16,8 +17,8 @@ This is a learning path generater that asks user to input what they would like t
    4. `pip install stem`
    5. `pip install selenium`
    6. `pip install selenium_stealth`
-5. **Run project**: `python main.py`
-6. **Deactivate venv**: `deactivate`
+6. **Run project**: `python main.py`
+7. **Deactivate venv**: `deactivate`
 
 
 
