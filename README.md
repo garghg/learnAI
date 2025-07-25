@@ -23,4 +23,10 @@ This is a learning path generater that asks user to input what they would like t
 
 
 _Note: In model.py, replace HUGGING_FACE_API_KEY with your own key. For test purposes, it will generate a python learning path if you use it without a key._  
+
+### Create and use your own API key
+1. Create a Hugging Face Account
+2. Follow the instructions [here](https://youtu.be/HXBQzucTITQ?t=44)
+3. In `model.py`, replace `api_key=os.environ["HUGGING_FACE_API_KEY"]` with `api_key=[your own api key here]` 
+
 _Note: It may take a few minutes to generate a path. There may be occasional inaccuracies by the models used._
