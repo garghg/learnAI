@@ -27,6 +27,13 @@ _Note: In model.py, replace HUGGING_FACE_API_KEY with your own key. For test pur
 ### Create and use your own API key
 1. Create a Hugging Face Account
 2. Follow the instructions [here](https://youtu.be/HXBQzucTITQ?t=44)
-3. In `model.py`, replace `api_key=os.environ["HUGGING_FACE_API_KEY"]` with `api_key=[your own api key here]` 
+   OR
+   1. From the dashboard, click on your profile picture
+   2. Navigate to Access Tokens
+   3. Click on Create New Token
+   4. Select Token Type: Read
+   5. Give the token a name and hit Create Token
+   6. Copy your newly generated token
+4. In `model.py`, replace `api_key=os.environ["HUGGING_FACE_API_KEY"]` with `api_key=[your own api key here]` 
 
 _Note: It may take a few minutes to generate a path. There may be occasional inaccuracies by the models used._
