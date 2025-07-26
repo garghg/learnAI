@@ -4,7 +4,8 @@ This is a learning path generater that asks user to input what they would like t
 
 ---
 ## Set Up
-
+You may download and run the exe file [here](https://drive.google.com/uc?export=download&id=1xh3vvLsT94QRyeRpGx9KRMNZAMU0CUoj).  
+OR  
 1.  **Clone repo**: `git clone https://github.com/garghg/learnAI.git`
 2.  Enter the src directory 
 3. **Create venv**: `python -m venv venv`
