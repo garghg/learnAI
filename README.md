@@ -5,6 +5,7 @@ This is a learning path generater that asks user to input what they would like t
 ---
 ## Set Up
 You may download and run the exe file [here](https://drive.google.com/uc?export=download&id=1xh3vvLsT94QRyeRpGx9KRMNZAMU0CUoj).  
+Find the headful version [here](https://drive.google.com/uc?export=download&id=14NlBvSpZGR2tISjfpRrSC-hsT5l3Rwrm).  
 _The exe file uses Google Chrome v138 or later. To run it, please ensure you have chrome v138 or above on your system._  
 OR  
 1.  **Clone repo**: `git clone https://github.com/garghg/learnAI.git`
